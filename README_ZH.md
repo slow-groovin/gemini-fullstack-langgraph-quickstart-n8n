@@ -15,9 +15,18 @@
 > 需要使用外部redis原因是: n8n中的基本节点完全没有提供全局变量的功能, 像这个项目中存在环状节点的循环流程, 虽然把变量完全放在上下文中也能实现, 但是异常复杂, 使用全局变量能简化很多
 
 ### 2. 导入workflow
+
+直接从 n8n 模板中导入: https://n8n.io/workflows/4758-perplexity-style-iterative-research-with-gemini-and-google-search/
+
 1. 下载 **workflow.json** 文件
 2. 在你的n8n中新建一个 workflow 并打开.
 3. 右上角 "..." 按钮 -> import from file -> 导入文件
+
+或者:
+
+1. 在你的n8n中新建一个 workflow 并打开.
+2. 右上角 "..." 按钮 -> import from url -> 填写url: `https://raw.githubusercontent.com/slow-groovin/gemini-fullstack-langgraph-quickstart-n8n/refs/heads/main/workflow.json`
+
 
 > 我创建这个工作流的版本是 `1.95.3`, 试了下低版本导入时会遇到一些节点无法识别的问题, 如果遇到这个问题了你可以试试更新或者咨询AI.
 
