@@ -18,6 +18,8 @@
 
 直接从 n8n 模板中导入: https://n8n.io/workflows/4758-perplexity-style-iterative-research-with-gemini-and-google-search/
 
+或者:
+
 1. 下载 **workflow.json** 文件
 2. 在你的n8n中新建一个 workflow 并打开.
 3. 右上角 "..." 按钮 -> import from file -> 导入文件
